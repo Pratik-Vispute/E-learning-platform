@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | EduPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>EduPro</h1>
+  <ul>
+    <li><a href="index.html">Courses</a></li>
+    <li><span class="toggle" onclick="toggleTheme()">🌙</span></li>
+  </ul>
+</nav>
+
+<section class="dashboard">
+  <h2>Your Learning Progress</h2>
+
+  <div class="progress-card">
+    <h3>Overall Progress</h3>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <span id="progress-text">0%</span>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

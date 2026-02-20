@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course | EduPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>EduPro</h1>
+  <ul>
+    <li><a href="index.html">Courses</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><span class="toggle" onclick="toggleTheme()">🌙</span></li>
+  </ul>
+</nav>
+
+<section class="course-detail">
+  <div class="video-box">
+    <iframe id="courseVideo" allowfullscreen></iframe>
+  </div>
+
+  <div class="course-info">
+    <h2 id="courseTitle"></h2>
+    <p id="courseDesc"></p>
+    <button class="btn" onclick="updateProgress()">Mark Lesson Completed</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+:root {
+  --bg: #f5f7fb;
+  --text: #222;
+  --card: #ffffff;
+  --primary: #6c63ff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #6c63ff, #4e54c8);
+  color: white;
+}
+
+/* COURSES */
+.courses {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+  width: 100%;
+}
+
+.course-card h3,
+.course-card p {
+  padding: 10px 15px;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* COURSE DETAIL */
+.course-detail {
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.video-box iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 320px;
+  border-radius: 12px;
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 40px;
+}
+
+.progress-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.progress-bar {
+  height: 14px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* LOGIN */
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .course-detail {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
